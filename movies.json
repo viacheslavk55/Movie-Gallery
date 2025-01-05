@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Home Alone",
+            "iscore": 7.7,
+            "rating": "R",
+            "runtime": 103,
+            "released": [1990, 11, 16],
+            "country": "USA",
+            "posters": ["img/homealone.png", "img/homealone2.png"],
+            "imdb": "https://www.imdb.com/title/tt0099785/?ref_=tt_mv_close",
+            "website": "https://www.hulu.com/guides/home-alone",
+            "likes": 715,
+            "dislikes": 103,
+            "posterindex": 0
+      },
+      {
+            "title": "The Fate of the Furious",
+            "iscore": 6.6,
+            "rating": "R",
+            "runtime": 136,
+            "released": [2017, 4, 14],
+            "country": "USA",
+            "posters": ["img/fast.png", "img/fast2.png", "img/fast3.png"],
+            "imdb": "https://www.imdb.com/title/tt4630562/",
+            "website": "https://fastandfurious.fandom.com/wiki/The_Fate_of_the_Furious",
+            "likes": 698,
+            "dislikes": 418,
+            "posterindex": 0
+      },
+      {
+            "title": "Jungle Cruise",
+            "iscore": 6.6,
+            "rating": "R",
+            "runtime": 127,
+            "released": [2021, 7, 30],
+            "country": "USA",
+            "posters": ["img/j.png", "img/j2.png"],
+            "imdb": "https://www.imdb.com/title/tt0870154/",
+            "website": "https://disney.fandom.com/wiki/Jungle_Cruise_(film)",
+            "likes": 1213,
+            "dislikes": 299,
+            "posterindex": 0
       }
 ]
