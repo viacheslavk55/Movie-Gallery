@@ -14,7 +14,9 @@
 	<link rel="stylesheet" type='text/css' href="style.css" />
 
 	<!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE-->
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Playwrite+IS:wght@100..400&display=swap" rel="stylesheet">
 	<!-- Javascript Framework (e.g., vue.js) (ADD HERE) -->
 	<script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
 
@@ -26,17 +28,17 @@
 
 		<div class="header">
 
-			<div class="container">
-				<h1 id="app_title">{{ title }}</h1>
+			<div class="container" class="text-center">
+				<h1 id="app_title" class="playwrite-is-g">{{ title }}</h1>
 			</div>
 
 		</div>
 
-		<div class="main">
+		<div class="main pt-0">
 
 			<div class="row">
 
-				<div v-for="(movies, index) in movies" class="col-md-6">
+				<div v-for="(movies, index) in movies" class="col-md-6 bg-dark">
 					<div class="thumbnail">
 
 						<img class="poster img-fluid" v-on:click="movies.posterindex++"
@@ -44,11 +46,11 @@
 						<div class="imageInfo">Poster {{ getPosterIndex(movies.posterindex, movies.posters) }} of {{
 							movies.posters.length }}</div>
 
-						<p class="title">{{movies.title}} ({{movies.country}})</p>
+						<p class="title dm-serif-text-regular fw-bolder">{{movies.title}} ({{movies.country}})</p>
 						<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movies.iscore}} </p>
-						<p class="runtime">Runtime: {{timeText(movies.runtime)}}</p>
+						<p class="runtime playwrite-is-g2">Runtime: {{timeText(movies.runtime)}}</p>
 						<p class="released">Released: {{getMonthText(movies.released)}} | Rated: {{movies.rating}}</p>
-						<p class="websites">Websites: <a :href="movies.imdb" target="_blank"> imdb </a> | <a
+						<p class="websites dm-serif-text-regular">Websites: <a :href="movies.imdb" target="_blank"> imdb </a> | <a
 								:href="movies.website" target="_blank">website</a></p>
 
 						<div class="social">
